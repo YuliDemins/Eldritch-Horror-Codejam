@@ -3,7 +3,6 @@ const ancientsData = [
       id: 'azathoth',
       name: 'azathoth',
       url: './assets/mythicCardBackground.png',
-    //   cardFace: Ancients.azathoth,
     firstStage: {
         greenCards: 1,
         blueCards: 1,
@@ -23,7 +22,6 @@ const ancientsData = [
     {
       id: 'cthulhu',
       name: 'cthulhu',
-    //   cardFace: Ancients.cthulhu,
       firstStage: {
         greenCards: 0,
         blueCards: 2,
@@ -43,7 +41,6 @@ const ancientsData = [
     {
       id: 'iogSothoth',
       name: 'iogSothoth',
-    //   cardFace: Ancients.iogSothoth,
       firstStage: {
         greenCards: 0,
         blueCards: 1,
@@ -63,7 +60,6 @@ const ancientsData = [
     {
       id: 'shubNiggurath',
       name: 'shubNiggurath',
-    //   cardFace: Ancients.shubNiggurath,
       firstStage: {
         greenCards: 1,
         blueCards: 1,
