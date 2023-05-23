@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+button {
+    color: inherit;
+}
+
+body {
+    background: url('assets/bg.png') center/cover no-repeat, rgb(76, 74, 74);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.wrapper {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.ancients {
+    flex: 1 1 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.ancient {
+    
+}
+
+.ancient img{
+    display: block;
+    max-width: 240px;
+    cursor: pointer;
+}
+
+.levels {
+    display: flex;
+    flex: 1 0 5%;
+    gap:2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 90px 10px;
+}
+
+.level_btn {
+    display: block;
+    font-size: 2em;
+    transition: all 0.3s ease;
+}
+
+.desk-container {
+    display: flex;
+    flex: 1 1 15%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 5px 8px rgba(114, 21, 121, 0.5);
+}
+
+.score {
+    padding:  0px 30px;
+    /* margin-bottom: 15px; */
+}
+
+.time {
+ display: flex;   
+}
+
+.time_score{
+    display: flex;
+    justify-content:center;
+}
+
+.time_title {
+    display: block;
+    width: 70px;
+    font-size: 2.4em;
+    margin: 0px 0px 12px 0px;
+}
+
+.time_item {
+    width: 40px;
+    height: 30px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.2;
+    border: 2px solid #fff;
+    margin: 0px 10px 15px;
+}
+
+.green {
+    background: #356026;
+}
+
+.brown {
+    background: #ae8119; 
+}
+
+.blue {
+    background: #4a5da6;
+}
+
+.desk_btn {
+width: 200px;
+margin-bottom: 25px;
+font-size: 2em;
+transition: all 0.3s ease;
+}
+
+.desk_btn:hover {
+    box-shadow: 0px 0px 5px 8px rgba(114, 21, 121, 0.5);
+}
+
+.open-card {
+
+
+}
+.cards {
+    width: 160px;
+    height: 210px;
+    background: url('./assets/mythicCardBackground.jpg') center/cover no-repeat, rgb(76, 74, 74);
+    margin-bottom: 20px;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.random {
+    background: center/cover no-repeat;
+    width: 160px;
+    height: 210px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+._active {
+    opacity: 1;
+    pointer-events: all; 
+    transition: all 0.3s ease;
+}
+
+._disable {
+    opacity: 0.2;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+._select {
+    box-shadow: 0px 0px 5px 8px rgba(114, 21, 121, 0.5);
+}
+
+@media (max-width: 1060px) {
+    .wrapper{
+        flex-direction: column;
+        max-width: 900px;
+    }
+
+    .ancients{
+        order: 1;
+        max-width: 100%;
+    }
+
+    .ancient img{
+        display:flex;
+        align-self:center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .levels{
+        order: 2;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .desk-container{
+        order:3;
+        max-width: 100%;   
+    }
+
+    .open-card {
+        display: flex;
+        flex-direction: row;  
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
